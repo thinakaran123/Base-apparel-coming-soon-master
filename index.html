@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="src/output.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="grid gap-5 bg-gradient-to-r from-hsl(0, 0%, 100%) to-hsl(0, 100%, 98%)"
+  >
+    <div class="">
+      <img src="./images/logo.svg" class="w-[5.50rem] mt-5 ml-5" alt="" />
+    </div>
+
+    <div
+      class="grid gap-5 w-[100%] h-[100%] lg:flex lg:flex-row-reverse lg:items-center"
+    >
+      <div class="lg:w-[40%] lg:h-[80%] lg:justify-self-end lg:mb-24">
+        <img class="block lg:hidden" src="./images/hero-mobile.jpg" alt="" />
+        <img class="hidden lg:inline" src="./images/hero-desktop.jpg" alt="" />
+      </div>
+      <div class="lg:w-[50%] flex flex-col h-[100%]">
+        <div
+          class="text-center lg:text-left lg:mt-28 p-5 lg:w-[70%] lg:h-[100%] lg:self-center lg:mr-36 flex flex-col gap-9"
+        >
+          <div class="uppercase text-3xl">
+            <p class="text-DesaturatedRed tracking-[7px]">
+              <span class="font-light">We're</span> <br /><span
+                class="font-semibold text-black"
+                >coming</span
+              >
+              <br /><span class="font-semibold text-black">soon</span>
+            </p>
+          </div>
+          <div>
+            <p class="text-DesaturatedRed">
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals. Email Address
+            </p>
+          </div>
+          <div>
+            <div
+              class="grid grid-flow-col w-[100%] rounded-full border border-DesaturatedRed"
+            >
+              <input
+                type="text"
+                id="inputbox"
+                placeholder="Email Address"
+                class="ml-4"
+              />
+              <img
+                onclick="check()"
+                src="./images/icon-arrow.svg"
+                class="justify-self-end py-4 px-6 border bg-red-700 rounded-full border-none"
+                alt=""
+              />
+            </div>
+            <p id="errormsg" class="text-left hidden text-SoftRed">
+              Please provide a valid mail
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>
